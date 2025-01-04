@@ -6,7 +6,7 @@ export default function Navbar() {
         <div className='navbar'>
             <NavbarItems value={"اخبار و اطلاعیه ها"} />
             <NavbarItems value={"پرسنل و دبیران"} />
-            <NavbarItems value={"ارتباط با ما"} />
+            <NavbarItems scroll={true} value={"ارتباط با ما"} />
             <NavbarItems value={"درباره ما"} />
         </div>
     )
