@@ -1,0 +1,45 @@
+.logo{
+    font-family: "IranNastaliq";
+    color: white;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px black;
+    font-size: 35px;
+    margin-right: 15%;
+}
+.navbar-items{
+    color: white;
+    font-family: "IRANSans";
+    font-weight: 500;
+    position: relative;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+.navbar-items::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: #BBE1FA;
+    transition: all .5s ease;
+    transform: translateX(-50%);
+    left: 50%;
+}
+.navbar-items:hover::after {
+    width: 100%;
+}
+.header{
+    background: linear-gradient(to left,#0F4C75 10%,#145c8d);
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    background-color: #27374D;
+    padding-right: 10%;
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
