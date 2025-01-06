@@ -1,8 +1,8 @@
-/*.home-background{
+.home-background{
     width: 100vw;
     height: 100vh;
     position: fixed;
-    z-index: -2;
+    z-index: -100;
     background: url(../../../public/body.jpg) no-repeat fixed;
     background-size: cover;
     top: 0;
@@ -16,66 +16,80 @@
     top: 0;
     background-color: rgba(21, 0, 255, 0.104);
 }
-    */
-.slider-img {
-    width: 100%;
-    height: 800px;
-    transition: all 1s ease;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    overflow: hidden;
-}
 
-.scale {
-    animation: slider 15s ease;
-}
-
-.scale2 {
-    animation: slider2 15s ease;
-}
-
-.slider {
-    overflow: hidden;
-    transition: all 1s ease;
-    height: 800px;
+.history{
+    height: 500px;
+    background-color: white;
+    display: flex;
+    align-items: center;
     position: relative;
 }
-
-@keyframes slider {
-    0% {
-        transform: scale(1);
-        opacity: .7;
-    }
-    20%{
-        opacity: 1;
-
-    }
-
-    100% {
-        transform: scale(1.2);
-
-    }
-
+.history p {
+    width: 45%;
+    margin-right: 10%;
+    font-size: 18px;
+    font-family: "IRANSans";
+    color: gray;
 }
-.dot{
-    width: 10px;
-    height: 10px;
-    border-radius: 15px;
-    background-color: gray;
-    margin: 0 5px;
-    cursor: pointer;
+.history p span{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
 }
-.dot:hover{
-    background-color: rgb(74, 74, 74);
-}
-.active-dov{
-    background-color: rgb(48, 48, 48);
-}
-.dot-countaner{
-    display: flex;
+.history img {
+    border-radius: 100%;
+    width: 300px;
     position: absolute;
-    width: 100%;
-    bottom: 50px;
+    top: 40px;
+    height: 300px;
+    left: 10%;
+}
+.general-content{
+    height: 600px;
+    background: url(/src/Images/khosroshah.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0px -200px;
+    position: relative;
+    z-index: -5;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
+}
+.general-content > div {
+    display: flex;
+}
+.general-content::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #085a9b;
+    opacity: .7;
+    position: absolute;
+    z-index: -1;
+    filter: blur(1px);
+    top: 0;
+}
+.general-content-items{
+    font-family: "IRANSans";
+    color: white;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 1px black;
+}
+.general-content-items h1 {
+    font-weight: 500;
+    font-size: 40px;
+}
+.general-content-items p {
+    font-size: 20px;
+    font-weight: 500;
+}
+.general-content-items div img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
 }
